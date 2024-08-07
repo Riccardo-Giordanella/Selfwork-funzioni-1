@@ -1,10 +1,12 @@
 // Dichiarazione variabili
 let counter = Number(prompt("Inserisci quante volte vuoi tirare il dado:"));
-let punteggio1 = 0;
-let punteggio2 = 0;
 
 // Function lancio dadi di entrambi i giocatori
 function lancio(numero){
+
+    let punteggio1 = 0;
+    let punteggio2 = 0;
+
     for(i = 1; i <= numero; i++){
 
         punteggio1 = punteggio1 + Math.floor(Math.random() * (6 - 1) + 1);
