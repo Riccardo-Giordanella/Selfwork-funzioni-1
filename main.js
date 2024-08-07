@@ -14,21 +14,21 @@ function lancio(numero){
         console.log(`Al tiro del dado numero ${i}, il giocatore 2 ha compiuto ${punteggio2} punti`);
 
     }
+    // Settaggio della if per stabilirne il vincitore
+    if(punteggio1 < punteggio2){
+        console.log(`Congratulazioni, il vincitore è Giocatore 2 con il punteggio di ${punteggio2}`);
+
+    }else if(punteggio1 == punteggio2){
+        console.log(`La partita è finita in parità`);
+
+    }else{
+        console.log(`Congratulazioni, il vincitore è Giocatore 1 con il punteggio di ${punteggio1}`);
+
+    }
 }
 
 // Invocazione della function
 lancio(counter)
 
-// Settaggio della if per stabilirne il vincitore
-if(punteggio1 < punteggio2){
-    console.log(`Congratulazioni, il vincitore è Giocatore 2 con il punteggio di ${punteggio2}`);
-
-}else if(punteggio1 == punteggio2){
-    console.log(`La partita è finita in parità`);
-
-}else{
-    console.log(`Congratulazioni, il vincitore è Giocatore 1 con il punteggio di ${punteggio1}`);
-
-}
 
 // Fine Esercizio
